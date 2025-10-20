@@ -1,0 +1,27 @@
+{
+  "name": "playwright-basic-example",
+  "version": "1.0.0",
+  "description": "Where to start with Playwright",
+  "main": "index.js",
+  "scripts": {
+  "test": "npx playwright test",
+  "test:headed": "npx playwright test --headed",
+  "test:report": "npx playwright show-report"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qa-shrine/Playwright-Basic-Example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/qa-shrine/Playwright-Basic-Example/issues"
+  },
+  "homepage": "https://github.com/qa-shrine/Playwright-Basic-Example#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.0"
+  }
+}
