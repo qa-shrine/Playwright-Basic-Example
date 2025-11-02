@@ -12,8 +12,7 @@ A minimal Playwright Test example repository showing a simple test structure, Pl
 - Tests and examples
 - Project structure
 - Troubleshooting & tips
-- Contributing
-- License
+
 
 
 ## About
@@ -84,17 +83,17 @@ Key settings are in `playwright.config.ts`:
 - `fullyParallel: true` — runs tests in parallel across workers.
 - `retries` — set to `2` when running in CI (controlled by `process.env.CI`).
 - `reporter` — console `list` + an `html` report written to `playwright-report`.
-- `use.baseURL` — configured as `http://localhost:3000` (useful for local apps).
+- `use.baseURL` — configured as `https://practicetestautomation.com/`.
 
-The config also defines three projects to run the suite in Chromium, Firefox and WebKit.
+The config also defines two projects to run the suite in Chromium and Firefox .
 
 
 ## Tests and examples
 
 There are two example tests in `tests/`:
 
-- `basic.spec.ts` — simple smoke test that navigates to `https://example.com` and asserts the page title contains "Example Domain".
-- `login.spec.ts` — a small illustrative login flow that fills username/password inputs and verifies a welcome element. It uses `data-testid` selectors as a recommended practice for test stability.
+- `basic.spec.ts` — simple smoke test that navigates to `https://practicetestautomation.com/` and asserts the page title contains "Practice Test Automation | Learn Selenium WebDriver".
+- `login.spec.ts` — a small illustrative login flow that fills username/password inputs and verifies a welcome element. It uses role based selectors as a recommended practice for test stability.
 
 These tests are intentionally minimal. Use them as templates when adding real tests for your application.
 
